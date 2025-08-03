@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Profile & Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    img, video {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+    table, th, td {
+      border: 1px solid #aaa;
+      border-collapse: collapse;
+      padding: 10px;
+      text-align: left;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    legend {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Profile</h1>
+    <p>This page showcases some of my hobbies and includes a contact form below.</p>
+  </header>
+
+  <section>
+    <h2> My Hobbies</h2>
+    <ul>
+      <li>Tennis</li>
+      <li>Chess</li>
+      <li>Coding</li>
+      <li>Karaoke</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2> Weekly Schedule</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Activity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>Chess Practice</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Coding Projects</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>Tennis Match</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>Karaoke Night</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Hobby Gallery</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Tennis_Racket_and_Balls.jpg" alt="Tennis">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Chess_Board.jpg" alt="Chess">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Laptop_coding.jpg" alt="Coding">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Karaoke_night.jpg" alt="Karaoke">
+  </section>
+
+  <section>
+    <h2> A Video I like</h2>
+    <video controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      
+    </video>
+  </section>
+
+  <section>
+    <h2> Contact Me</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Info</legend>
+        <label for="name">Full Name:</label><br />
+        <input type="text" id="name" name="name" placeholder="Your name" required minlength="2" /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" placeholder="you@example.com" required /><br /><br />
+
+        <label for="dob">Date of Birth:</label><br />
+        <input type="date" id="dob" name="dob" required /><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Feedback</legend>
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="4" placeholder="Leave a message..." required></textarea><br /><br />
+
+        <label for="rating">Rate My Page:</label><br />
+        <input type="range" id="rating" name="rating" min="1" max="10" /><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label for="contact">Preferred Contact Method:</label><br />
+        <select id="contact" name="contact" required>
+          <option value="">Choose one</option>
+          <option value="email">Email</option>
+          <option value="phone">Phone</option>
+        </select><br /><br />
+
+        <input type="checkbox" id="subscribe" name="subscribe" />
+        <label for="subscribe">Subscribe to newsletter</label><br /><br />
+
+        <input type="submit" value="Submit Form" />
+      </fieldset>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Mercy Koima</p>
+  </footer>
+</body>
+</html>
